@@ -1,40 +1,11 @@
-/* ====================================
-// css variables
-// ==================================== */
-
-:root {
+.row + .row {
+  margin-top: 16px;
 }
 
-/* ====================================
-// reset rules
-// ==================================== */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 16px;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-
-  font-size: 1rem;
-  line-height: 1.25;
-}
-
-a {
-  color: inherit;
-}
-
-img,
-video {
-  max-inline-size: 100%;
-  block-size: auto;
-  vertical-align: middle;
+.row > .col,
+.row > [class^=col-] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #563d7c26;
+  border: 1px solid #563d7c33;
 }
